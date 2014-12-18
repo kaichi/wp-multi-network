@@ -214,6 +214,7 @@ class WP_MS_Networks_List_Table extends WP_List_Table {
 						<?php						
 						
 						$actions = array(
+							'view-network' => '<span class="edit"><a href="' . $siteurl . '" title="' . __( 'View' ) . '" target="_blank">' . __( 'View' ) . '</a></span>',
 							'network_admin' => '<span class="edit"><a href="' . $siteurl . 'wp-admin/network/" title="' . __( 'Network Admin' ) . '">' . __( 'Network Admin' ) . '</a></span>',
 							'assign_sites'  => '<span class="edit"><a href="' . add_query_arg(array( 'action'	=> 'assignblogs' ), $myurl ) . '" title="' . __( 'Assign sites to this network' ) . '">' . __( 'Assign Sites' ) . '</a></span>',
 							'edit'          => '<span class="edit"><a class="edit_network_link" href="' . add_query_arg(array( 'action'	=> 'editnetwork' ), $myurl ) . '" title="' . __( 'Edit this network' ) . '">' . __( 'Edit' ) . '</a></span>',
